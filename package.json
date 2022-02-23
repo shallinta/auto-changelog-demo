@@ -2,7 +2,10 @@
   "name": "auto-changelog-demo",
   "version": "0.1.1",
   "description": "A project demo which configs auto generation of changelogs when commiting.",
-  "keywords": [],
+  "keywords": [
+    "changelog",
+    "husky"
+  ],
   "main": "index.js",
   "scripts": {
     "start": "",
