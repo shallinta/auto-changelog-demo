@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+if [ -f .husky/_/version_updating ]; then
+  echo '>>>>>>>> VERSION UPDATED!    <<<<<<<<';
+  rm .husky/_/version_updating;
+else
+  echo '>>>>>>>> VERSION UPDATING... <<<<<<<<';
+  touch .husky/_/version_updating;
+  npm run post-commit;
+fi
